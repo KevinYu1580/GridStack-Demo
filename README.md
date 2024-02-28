@@ -1,7 +1,3 @@
-## KB連結
-
-http://192.168.50.109/kanboard-1.2.8/?controller=TaskViewController&action=show&task_id=2030&project_id=141
-
 ## 專案起始&下載模組
 
 ```bash
@@ -138,7 +134,3 @@ yarn build
         |-- service.js
 
 ```
-
-## component map
-
-待補
