@@ -8,13 +8,15 @@
   <br />
   <br />
 
-  <Button :label="'元件漂浮: ' + gridFloat" @click="toggleFloat()" />
+  <div class="flex gap-4">
+    <Button :label="'元件漂浮: ' + gridFloat" @click="toggleFloat()" />
 
-  <Button :label="'可拖動 :' + gridDraggable" @click="toggleDraggable()" />
+    <Button :label="'可拖動 :' + gridDraggable" @click="toggleDraggable()" />
 
-  <Button :label="'可移除: ' + gridRemovable" @click="toogleRemovable()" />
+    <Button :label="'可移除: ' + gridRemovable" @click="toogleRemovable()" />
 
-  <Button :label="'Save'" @click="save()" />
+    <Button :label="'Save (check console.log)'" @click="save()" />
+  </div>
 
   <br />
 
@@ -26,6 +28,7 @@
   <br />
 
   <!-- layout元件庫 -->
+  元件模板 (從此處拖曳元件至Layout)
   <div class="gridTemplateArea mb-[40px]" graggable>
     <!-- 
         gs-x: x座標 (必要)
@@ -58,6 +61,7 @@
   </div>
 
   <!-- layout -->
+  Layout
   <div class="grid-stack mb-[20px]">
     <div
       v-for="gridItem in gridItems"

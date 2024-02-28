@@ -551,6 +551,10 @@ video {
 @layer tailwind-utilities {
   /* @tailwind components; 該項目不需要tailwind的component*/
 
+  .fixed{
+    position: fixed !important;
+  }
+
   .absolute{
     position: absolute !important;
   }
@@ -587,6 +591,10 @@ video {
     display: grid !important;
   }
 
+  .hidden{
+    display: none !important;
+  }
+
   .resize{
     resize: both !important;
   }
@@ -595,7 +603,15 @@ video {
     flex-wrap: wrap !important;
   }
 
+  .gap-4{
+    gap: 1rem !important;
+  }
+
   .border{
     border-width: 1px !important;
+  }
+
+  .outline{
+    outline-style: solid !important;
   }
 }
